@@ -18,24 +18,38 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="headerBar">
       <nav class="navBar">
         <ul class="navBar-addContact">
-          <li class="navbar-addcontact--listdisplaynone menuBerger">
+          <li class="navbar-addcontact--liststylenone menuBerger">
             <span class="material-symbols-outlined"> menu </span>
           </li>
-          <li class="navbar-addcontact--listdisplaynone imgContact">
-            <img src="img/contacts_2022_48dp.png" alt="picture Contact" />
+          <li class="navbar-addcontact--liststylenone imgContact">
+            <img
+              src="img/contacts_2022_48dp.png"
+              class="imgContact--size"
+              alt="picture Contact"
+            />
           </li>
-          <li class="navbar-addcontact--listdisplaynone textContact">
-            Contact
+          <li
+            class="navbar-addcontact--liststylenone textContact textContact--roboto"
+          >
+            Contacts
           </li>
         </ul>
         <ul class="navBar-addContact">
-          <li class="navbar-addcontact--listdisplaynone searchBar">
-            <span class="material-symbols-outlined"> search </span>
+          <li class="navbar-addcontact--liststylenone searchBar">
+            <span class="material-symbols-outlined searchBarIcon">
+              search
+            </span>
             <input
               type="text"
               id="inputSearch"
@@ -44,23 +58,134 @@
             />
           </li>
         </ul>
-        <ul class="navBar-addContact">
-          <li class="navbar-addcontact--listdisplaynone iconHelp">
-            <i class="material-icons VfPpkd-kBDsod" aria-hidden="true"
-              >help_outline</i
-            >
-          </li>
-          <li class="navbar-addcontact--listdisplaynone iconSetting">
-            <i class="material-icons VfPpkd-kBDsod" aria-hidden="true"
-              >settings</i
-            >
-          </li>
-          <li class="navbar-addcontact--listdisplaynone">
+        <ul class="navBar-addContact navBar-addContact--marginLeft">
+          <div class="iconSettinghelp--marginRight">
+            <li class="navbar-addcontact--liststylenone">
+              <i
+                class="material-icons VfPpkd-kBDsod iconHelp"
+                aria-hidden="true"
+                >help_outline</i
+              >
+            </li>
+            <li class="navbar-addcontact--liststylenone">
+              <span class="material-symbols-outlined iconSetting">
+                settings
+              </span>
+            </li>
+          </div>
+          <li class="navbar-addcontact--liststylenone">
             <span class="material-symbols-outlined iconApps"> apps </span>
           </li>
-          <li class="navbar-addcontact--listdisplaynone iconCount"></li>
+          <li class="navbar-addcontact--liststylenone iconCount"></li>
         </ul>
       </nav>
     </header>
+
+    <main class="mainSections">
+      <section class="addContact">
+        <button class="createContact">
+          <span class="material-symbols-outlined"> add</span>
+          <p>Créer contact</p>
+        </button>
+        <div class="showInfoContact-container">
+          <ul class="showInfoContact-list">
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listContacts showInfoContact-list--liststylenone showInfoContact-list--displayflex showInfoContact-list--borderRadius30Bg"
+              >
+                <span class="material-icons"> person </span>Contacts
+              </li></a
+            >
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listFrequents showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+              >
+                <span class="material-icons"> history </span>Fréquents
+              </li></a
+            >
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+              >
+                <span class="material-symbols-outlined"> archive </span>Autres
+                Contacts <span class="material-symbols-outlined"> info </span>
+              </li></a
+            >
+          </ul>
+
+          <p class="manage-CorrectText">Corriger et gérer</p>
+
+          <ul class="showInfoContact-list">
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listContacts showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+              >
+                <span class="material-symbols-outlined"> handyman </span
+                >Fusionner et corriger
+              </li></a
+            >
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listFrequents showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+              >
+                <span class="material-symbols-outlined"> download </span
+                >Importer
+              </li></a
+            >
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+              >
+                <span class="material-symbols-outlined"> delete </span>Corbeille
+              </li></a
+            >
+          </ul>
+          <div class="manageIconTextLibelle">
+            <p class="LibelleText">Libellés</p>
+            <span class="material-symbols-outlined"> add</span>
+          </div>
+
+          <ul class="showInfoContact-list">
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listFrequents showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+              >
+                <span class="material-icons"> label </span>Collègues<span
+                  class="material-symbols-outlined"
+                >
+                  edit </span
+                ><span class="material-symbols-outlined"> delete </span>
+              </li></a
+            >
+            <a
+              href="#infoContactsid"
+              class="showInfoContact-list--textdecorationNoneRed"
+              ><li
+                class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+              >
+                <span class="material-icons"> label </span>Restaurer depuis
+                l'a...<span class="material-symbols-outlined"> edit </span
+                ><span class="material-symbols-outlined"> delete </span>
+              </li></a
+            >
+          </ul>
+        </div>
+      </section>
+      <section class="infoContacts" id="infoContactsid"></section>
+    </main>
   </body>
 </html>

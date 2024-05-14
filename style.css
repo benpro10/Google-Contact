@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background: #f8fafd;
+}
 .navBar{
   width: 95%;
   height: 10vh;
@@ -13,28 +16,136 @@
 }
 .navBar-addContact{
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
-.navbar-addcontact--listdisplaynone{
+.navBar-addContact--marginLeft{
+  margin-left: 18px;
+  /* background: black; */
+}
+.iconHelp, .iconSetting, .iconApps{
+  color: #5f6368;
+  opacity: 1;
+}
+.navbar-addcontact--liststylenone{
   list-style: none;
 }
+.imgContact--size{
+  width: 40px;
+  height: 40px;
+}
+.textContact--roboto{
+  font-family: 'Product sans', Arial, sans-serif;
+  font-weight: 420;
+  font-size: 22px;
+  line-height: 24px;
+  color: #5f6368;
+  opacity: 1;
+  vertical-align: middle;
+}
 .searchBar{
+  display: flex;
+  gap: 15px;
   background: #f1f3f4;
-  width: 600px;
+  width: 729px;
   height: 7vh;
   margin-top: 10px;
-  margin-left: 100px;
-  border-radius: 10px 10px 10px 10px;
+  margin-left: 70px;
+  border-radius: 5px 5px 5px 5px;
 
 }
 .searchBar--Transpearent{
   border: transparent;
   background-color: transparent;
+  font-size: 17px;
+}
+.searchBarIcon{
+  margin-top: 7px;
+  margin-left: 20px;
+}
+.iconSettinghelp--marginRight{
+  display: flex;
+  gap: 15px;
+  margin-right: 28px;
 }
 .iconCount{
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   background-color: #78909c;
   border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* ---------------------------------------------------Sections */
+
+.mainSections{
+  width: 95%;
+  margin: 0 auto;
+  height: 84vh;
+  margin-top: 20px;
+}
+.addContact{
+  width: 22%;
+  /* background: blue; */
+  height: 84vh;
+  display: inline-block;
+}
+.createContact{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 15px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 15px;
+  border: transparent;
+  background: hsl(204, 100%, 88%);
+}
+.showInfoContact-container{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.LibelleText, .manage-CorrectText{
+  margin-top: 8px;
+  margin-left: 13px;
+}
+.manageIconTextLibelle{
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.showInfoContact-list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.showInfoContact-list--liststylenone{
+  list-style: none;
+  padding: 10px 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  border: transparent;
+}
+.showInfoContact-list--borderRadius30Bg{
+  border-radius: 30px;
+  background: hsl(204, 100%, 88%);
+}
+.showInfoContact-list--displayflex{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.showInfoContact-list--textdecorationNoneRed{
+  text-decoration: none;
+  color: black;
+}
+.infoContacts{
+  width: 78%;
+  box-sizing: border-box;
+  float: right;
+  height: 84vh;
+  background: #ffffff;
+  border-radius: 20px 20px 20px 20px;
 }
