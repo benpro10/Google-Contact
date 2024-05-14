@@ -155,3 +155,6 @@ body{
 .iconDelete--marginleft{
   margin-left: 48px;
 }
+.iconEdit--marginleft{
+  left: 100px;
+}
