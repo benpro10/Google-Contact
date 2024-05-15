@@ -113,8 +113,11 @@
               ><li
                 class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
               >
-                <span class="material-symbols-outlined "> archive </span>Autres
-                Contacts <span class="material-symbols-outlined iconInfo--marginleft100"> info </span>
+                <span class="material-symbols-outlined"> archive </span>Autres
+                Contacts
+                <span class="material-symbols-outlined iconInfo--marginleft100">
+                  info
+                </span>
               </li></a
             >
           </ul>
@@ -165,10 +168,12 @@
                 class="listFrequents showInfoContact-list--liststylenone showInfoContact-list--displayflex"
               >
                 <span class="material-icons"> label </span>Collègues<span
-                  class="material-symbols-outlined iconEdit--marginleft"
+                  class="material-symbols-outlined iconEditDelet--marginLeftOpacity0"
+                  >edit </span
+                ><span
+                  class="material-symbols-outlined iconEditDelet--marginLeftOpacity0"
+                  >delete</span
                 >
-                  edit </span
-                ><span class="material-symbols-outlined iconDelete--marginleft"> delete </span>
               </li></a
             >
             <a
@@ -178,14 +183,35 @@
                 class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
               >
                 <span class="material-icons"> label </span>Restaurer depuis
-                l'a...<span class="material-symbols-outlined"> edit </span
-                ><span class="material-symbols-outlined"> delete </span>
+                l'a...<span
+                  class="material-symbols-outlined manageIconDeleteEdit--opacity"
+                >
+                  edit </span
+                ><span
+                  class="material-symbols-outlined manageIconDeleteEdit--opacity"
+                >
+                  delete
+                </span>
               </li></a
             >
           </ul>
         </div>
       </section>
-      <section class="infoContacts" id="infoContactsid"></section>
+      <section class="infoContacts" id="infoContactsid">
+        <div class="infoContactTopcontainer">
+          <h1 class="infoContactTopcontainer-titre">Contacts</h1>
+          <div class="identifierContact">
+            <p>Titre</p>
+            <p>E-mail</p>
+            <p>Numéro de téléphone</p>
+            <div class="identifierContact-icons">
+              <span class="material-icons"> print </span>
+              <span class="material-symbols-outlined"> download </span>
+              <span class="material-symbols-outlined"> more_vert </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
