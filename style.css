@@ -30,6 +30,9 @@ body{
 .navbar-addcontact--liststylenone{
   list-style: none;
 }
+.menuBerger{
+  cursor: pointer;
+}
 .imgContact--size{
   width: 40px;
   height: 40px;
@@ -54,10 +57,11 @@ body{
   border-radius: 5px 5px 5px 5px;
 
 }
-.searchBar--Transpearent{
+.searchBar--TransparentSize{
   border: transparent;
   background-color: transparent;
   font-size: 17px;
+  width: 729px;
 }
 .searchBarIcon{
   margin-top: 7px;
@@ -86,7 +90,6 @@ body{
 }
 .addContact{
   width: 22%;
-  /* background: blue; */
   height: 84vh;
   display: inline-block;
 }
@@ -151,6 +154,7 @@ body{
   height: 84vh;
   background: #ffffff;
   border-radius: 20px 20px 20px 20px;
+  transition: 0.5s;
 }
 .iconEditDelet--marginLeftOpacity0{
   margin-left: 1.6rem;
@@ -166,7 +170,7 @@ body{
   height: 15vh;
   margin: 0 auto;
   border-bottom: 1px solid #d3d5d3;
-  visibility: hidden;
+  /* visibility: hidden; */
   /* opacity: 0; */
 }
 .identifierContact{
@@ -185,4 +189,7 @@ body{
   line-height: 2rem;
   margin-top: 30px;
   margin-left: 19px;
+}
+.identifierContact-icons{
+  display: flex;
 }
