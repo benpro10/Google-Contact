@@ -5,6 +5,7 @@
 }
 body {
   background: #f8fafd;
+  overflow: hidden;
 }
 .navBar {
   width: 95%;
@@ -25,10 +26,10 @@ body {
 }
 
 .navBar-addContact:nth-child(2) {
-  width: calc(70% - 298px);
+  width: calc(80% - 268px);
 }
 .navBar-addContact:nth-child(3) {
-  width: 30%;
+  width: 20%;
   justify-content: end;
 }
 .navBar-addContact--marginLeft {
@@ -117,7 +118,6 @@ body {
   width: 268px;
   height: 84vh;
   transition: all 0.5s ease;
-  /* display: inline-block; */
 }
 .createContact {
   display: flex;
@@ -134,7 +134,6 @@ body {
 .showInfoContact-container {
   display: flex;
   flex-direction: column;
-  gap: 3px;
 }
 .LibelleText,
 .manage-CorrectText {
@@ -144,21 +143,26 @@ body {
 .iconLibelle--cursorpointer,
 .iconInfo--cursorpointer {
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.612);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
 }
 .iconLibelle--cursorpointer:hover {
   background-color: rgba(128, 128, 128, 0.128);
   border-radius: 50%;
-  padding: 2px;
 }
 .iconInfo--cursorpointer:hover {
   background-color: rgba(128, 128, 128, 0.128);
-  border-radius: 50%;
-  padding: 5px;
+  border-radius: 100%;
 }
 .manageIconTextLibelle {
   display: flex;
   align-items: center;
-  gap: 164px;
+  gap: 153px;
 }
 .showInfoContact-list {
   display: flex;
@@ -168,7 +172,7 @@ body {
 .showInfoContact-list--liststylenone {
   list-style: none;
   padding: 10px 10px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   font-size: 15px;
   border: transparent;
 }
@@ -179,7 +183,7 @@ body {
 .showInfoContact-list--displayflex {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 .iconInfo--marginleft100 {
   margin-left: 102px;
@@ -191,27 +195,23 @@ body {
 .infoContacts {
   width: calc(100% - 268px);
   box-sizing: border-box;
-  /* float: right; */
   height: 84vh;
   background: #ffffff;
   border-radius: 20px 20px 20px 20px;
   transition: 0.5s;
+  /* display: none; */
 }
 .iconEditDelet--marginLeftOpacity0 {
-  margin-left: 1.6rem;
-  opacity: 0;
+  margin-left: 1.9rem;
+  margin-right: 0;
+  /* opacity: 0; */
 }
-.manageIconDeleteEdit--opacity {
-  opacity: 0;
-}
-
 .infoContactTopcontainer {
   width: 98%;
   box-sizing: border-box;
   height: 15vh;
   margin: 0 auto;
   border-bottom: 1px solid #d3d5d3;
-  display: none;
 }
 .identifierContact {
   width: 95%;
@@ -259,4 +259,60 @@ body {
 .infoContactsTransition {
   width: 100%;
   transition: all 0.5s ease;
+}
+.createContact-modal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  background: #f3f7fc;
+  width: 250px;
+  height: 95px;
+  border-radius: 5px;
+  overflow: visible;
+  border:1px solid #f3f7fc;
+  z-index: 9999;
+  position:absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.createContact-modal--dislplayflex{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.InfoContactAdded{
+  width: calc(100% - 268px);
+  box-sizing: border-box;
+  height: 84vh;
+  background: #ffffff;
+  /* background:red; */
+  border-radius: 20px 20px 20px 20px;
+  transition:all 0.5s ease;
+  display: none;
+}
+.InfoContactAddedTop{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 98%;
+  box-sizing: border-box;
+  height: 10vh;
+  margin: 0 auto;
+}
+.ContactAddedTop-starText{
+  display: flex;
+}
+.ContactAddedTo-picture{
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 30%;
+  bottom: 48%;
+}
+.ContactAddedTo-picture--size{
+  width: 100%;
 }
