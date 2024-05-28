@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google-Contact</title>
     <link
       rel="shortcut icon"
       href="/img/contacts_2022_48dp.png"
@@ -24,239 +23,105 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Google contact</title>
   </head>
   <body>
-    <header class="headerBar">
-      <nav class="navBar">
-        <ul class="navBar-addContact">
-          <li class="navbar-addcontact--liststylenone menuBerger">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__logo">
+          <li class="nav__logo-item">
             <span class="material-symbols-outlined"> menu </span>
           </li>
-          <li class="navbar-addcontact--liststylenone imgContact">
+          <li class="nav__logo-item">
             <img
               src="img/contacts_2022_48dp.png"
               class="imgContact--size"
               alt="picture Contact"
             />
           </li>
-          <li
-            class="navbar-addcontact--liststylenone textContact textContact--roboto"
-          >
-            Contacts
-          </li>
+          <li class="nav__logo-item">Contacts</li>
         </ul>
-        <ul class="navBar-addContact">
-          <li class="navbar-addcontact--liststylenone searchBar">
-            <span class="material-symbols-outlined searchBarIcon">
-              search
-            </span>
+
+        <ul class="nav__search">
+          <li class="nav__search-item">
+            <span class="material-symbols-outlined"> search </span>
             <input
               type="text"
-              id="inputSearch"
-              class="searchBar--TransparentSize"
+              id="nav__search-input"
+              class="nav__search-input"
               placeholder="Rechercher..."
             />
           </li>
         </ul>
-        <ul class="navBar-addContact navBar-addContact--marginLeft">
-          <div class="iconSettinghelp--marginRight">
-            <li class="navbar-addcontact--liststylenone">
-              <i
-                class="material-icons VfPpkd-kBDsod iconHelp"
-                aria-hidden="true"
-                >help_outline</i
-              >
-            </li>
-            <li class="navbar-addcontact--liststylenone">
-              <span class="material-symbols-outlined iconSetting">
-                settings
-              </span>
-            </li>
-          </div>
-          <li class="navbar-addcontact--liststylenone">
-            <span class="material-symbols-outlined iconApps"> apps </span>
-          </li>
-          <li class="navbar-addcontact--liststylenone iconCount"></li>
-        </ul>
       </nav>
     </header>
 
-    <main class="mainSections">
-      <section class="addContact">
-        <button class="createContact">
-          <span class="material-symbols-outlined"> add</span>
-          <p>Créer contact</p>
-        </button>
-        <div class="createContact-modal">
-          <div class="createOneContact-modal createContact-modal--dislplayflex">
-            <span class="material-symbols-outlined"> person </span>
-            <p>Créer contact</p>
-          </div>
-          <div
-            class="createMoreContact-modal createContact-modal--dislplayflex"
-          >
-            <span class="material-symbols-outlined"> group </span>
-            <p>Créer plusieures contacts</p>
-          </div>
-        </div>
-        <div class="showInfoContact-container">
-          <ul class="showInfoContact-list">
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listContacts showInfoContact-list--liststylenone showInfoContact-list--displayflex showInfoContact-list--borderRadius30Bg"
-              >
-                <span class="material-icons"> person </span>Contacts
-              </li></a
-            >
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listFrequents showInfoContact-list--liststylenone showInfoContact-list--displayflex"
-              >
-                <span class="material-icons"> history </span>Fréquents
-              </li></a
-            >
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
-              >
-                <span class="material-symbols-outlined"> archive </span>Autres
-                Contacts
-                <span
-                  class="material-symbols-outlined iconInfo--marginleft100 iconInfo--cursorpointer"
-                >
-                  info
-                </span>
-              </li></a
-            >
-          </ul>
+    <section class="home">
+      <div class="home__left">
+        <ul class="home__left-button">
+          <button class="home__left-btn">
+            <span class="material-symbols-outlined"> add</span>
+            Créer contact
+          </button>
+        </ul>
 
-          <p class="manage-CorrectText">Corriger et gérer</p>
+        <ul class="home__left-list">
+          <li class="home__left-item">
+            <span class="material-icons"> person </span>Contacts
+            <span class="home__left-count"></span>
+          </li>
+          <li class="home__left-item">
+            <span class="material-icons"> history </span>Fréquents
+          </li>
+        </ul>
 
-          <ul class="showInfoContact-list">
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listContacts showInfoContact-list--liststylenone showInfoContact-list--displayflex"
+        <div class="home__left-label">
+          <ul class="home__left-label--list">
+            <li class="home__left-label--item">
+              Libellé
+              <span class="material-symbols-outlined home__left-label--icon">
+                add</span
               >
-                <span class="material-symbols-outlined"> handyman </span
-                >Fusionner et corriger
-              </li></a
-            >
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listFrequents showInfoContact-list--liststylenone showInfoContact-list--displayflex"
-              >
-                <span class="material-symbols-outlined"> download </span
-                >Importer
-              </li></a
-            >
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
-              >
-                <span class="material-symbols-outlined"> delete </span>Corbeille
-              </li></a
-            >
-          </ul>
-          <div class="manageIconTextLibelle">
-            <p class="LibelleText">Libellés</p>
-            <span
-              class="material-symbols-outlined iconLibelle--cursorpointer clickLibelle"
-            >
-              add</span
-            >
-          </div>
-
-          <ul class="showInfoContact-list">
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listFrequents showInfoContact-list--liststylenone showInfoContact-list--displayflex"
-              >
-                <span class="material-icons"> label </span>Collègues<span
-                  class="material-symbols-outlined iconEditDelet--marginLeftOpacity0"
-                  >edit </span
-                ><span
-                  class="material-symbols-outlined iconEditDelet--marginLeftOpacity0"
-                  >delete</span
-                >
-              </li></a
-            >
-            <a
-              href="#infoContactsid"
-              class="showInfoContact-list--textdecorationNoneRed"
-              ><li
-                class="listOtherContact showInfoContact-list--liststylenone showInfoContact-list--displayflex"
-              >
-                <span class="material-icons"> label </span>Restaurer depuis
-                l'a...<span
-                  class="material-symbols-outlined manageIconDeleteEdit--opacity manageIconDeleteEdit--opacity"
-                >
-                  edit </span
-                ><span
-                  class="material-symbols-outlined manageIconDeleteEdit--opacity"
-                >
-                  delete
-                </span>
-              </li></a
-            >
+            </li>
           </ul>
         </div>
-      </section>
-      <section class="infoContacts" id="infoContactsid">
-        <div class="infoContactTopcontainer">
-          <h1 class="infoContactTopcontainer-titre">Contacts</h1>
-          <div class="identifierContact">
-            <p>Titre</p>
-            <p>E-mail</p>
-            <p>Numéro de téléphone</p>
-            <div class="identifierContact-icons">
-              <div>
-                <span class="material-icons"> print </span>
-              </div>
-              <div>
-                <span class="material-symbols-outlined"> download </span>
-              </div>
-              <div>
-                <span class="material-symbols-outlined"> more_vert </span>
-              </div>
-            </div>
+      </div>
+
+      <div class="home__right">
+        <div class="home__right-contact--list">
+          <div class="home__right-contact-label">
+            <span class="home__right-contact--head">Contacts</span>
+            <span class="home__right-contact--count">(0)</span>
           </div>
+          <ul class="home__right-contact--title">
+            <li class="home__right-contact--item">Titre</li>
+            <li class="home__right-contact--item">E-mail</li>
+            <li class="home__right-contact--item">Numéro de téléphone</li>
+            <li class="home__right-contact--item">Fonction et entreprise</li>
+            <li class="home__right-contact--item">Libellé</li>
+          </ul>
+
+          <ul class="home__right-contact--element">
+            <li class="home__right-contact--item">Titre</li>
+            <li class="home__right-contact--item">E-mail</li>
+            <li class="home__right-contact--item">Numéro de téléphone</li>
+            <li class="home__right-contact--item">Fonction et entreprise</li>
+            <li class="home__right-contact--item">Libellé</li>
+          </ul>
         </div>
-      </section>
-      <section class="InfoContactAdded">
-        <div class="InfoContactAddedTop">
-          <div class="arrowBack">
-            <span class="material-symbols-outlined"> arrow_back </span>
-          </div>
-          <div class="ContactAddedTop-starText">
-            <div class="star">
-              <span class="material-symbols-outlined"> grade </span>
-            </div>
-            <p class="addedContactText--borderRadius">Enregistrer</p>
-          </div>
-          <div class="ContactAddedTo-picture">
-            <img
-              src="/img/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png"
-              alt=""
-              class="ContactAddedTo-picture--size"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="index.js"></script>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
