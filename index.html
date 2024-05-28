@@ -95,29 +95,113 @@
 
       <div class="home__right">
         <div class="home__right-contact--list">
-          <div class="home__right-contact-label">
-            <span class="home__right-contact--head">Contacts</span>
-            <span class="home__right-contact--count">(0)</span>
+          <div class="home__right-contact--block">
+            <div class="home__right-contact-label">
+              <span class="home__right-contact--head">Contacts</span>
+              <span class="home__right-contact--count">(0)</span>
+            </div>
+            <ul class="home__right-contact--title">
+              <li class="home__right-contact--item">Titre</li>
+              <li class="home__right-contact--item">E-mail</li>
+              <li class="home__right-contact--item">Numéro de téléphone</li>
+              <li class="home__right-contact--item">Fonction et entreprise</li>
+              <li class="home__right-contact--item">Libellé</li>
+            </ul>
+            <hr />
           </div>
-          <ul class="home__right-contact--title">
-            <li class="home__right-contact--item">Titre</li>
-            <li class="home__right-contact--item">E-mail</li>
-            <li class="home__right-contact--item">Numéro de téléphone</li>
-            <li class="home__right-contact--item">Fonction et entreprise</li>
-            <li class="home__right-contact--item">Libellé</li>
-          </ul>
 
-          <ul class="home__right-contact--element">
-            <li class="home__right-contact--item">Titre</li>
-            <li class="home__right-contact--item">E-mail</li>
-            <li class="home__right-contact--item">Numéro de téléphone</li>
-            <li class="home__right-contact--item">Fonction et entreprise</li>
-            <li class="home__right-contact--item">Libellé</li>
-          </ul>
+          <span class="home__right--label">Contacts</span>
+
+          <div id="contact__item" class="contact__item">
+            
+          </div>
+        </div>
+
+        <div class="home__right-contact--add">
+          <div class="home__right-contact--add-block">
+            <span class="material-symbols-outlined"> arrow_back </span>
+            <div class="home__right-contact--btn-block">
+              <span class="material-symbols-outlined"> grade </span>
+              <button class="home__right-contact--btn">Enregistrer</button>
+            </div>
+          </div>
+
+          <div class="home__right-contact--picture">
+            <img
+              src="/img/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png"
+              alt=""
+            />
+          </div>
+
+          <form
+            id="home__right-contact--form"
+            class="home__right-contact--form"
+          >
+            <div class="champPrenom">
+              <span class="material-symbols-outlined" id="iconePersone"
+                >person</span
+              >
+              <input
+                type="text"
+                id="prenom"
+                name="Prénom"
+                placeholder="Prénom"
+                required
+                class="inputPrenom"
+              />
+            </div>
+            <div class="champNoms">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nom"
+                required
+              />
+              <!-- <span class="material-symbols-outlined more">expand_more</span> -->
+            </div>
+            <div class="entreprise">
+              <span class="material-symbols-outlined">source_environment</span>
+              <input
+                type="text"
+                class="textzone"
+                name="entreprise"
+                placeholder="Entreprise"
+                id="entreprise"
+                required
+              />
+            </div>
+            <div class="entrepriseFonction">
+              <input
+                type="text"
+                class="textzone"
+                name="fonction"
+                placeholder="Fonction"
+                id="fonction"
+                required
+              />
+              <!-- <span class="material-symbols-outlined">expand_more</span> -->
+            </div>
+            <div class="mail">
+              <span class="material-symbols-outlined">mail</span>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email"
+                required
+              />
+            </div>
+            <div class="phones">
+              <span class="material-symbols-outlined">call</span>
+              <input type="tel" id="phone" name="phone" value="+243" required />
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
+    <script src="./index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

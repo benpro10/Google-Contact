@@ -46,15 +46,25 @@
   border: none;
 }
 
+.home__right-contact--list {
+  /* display: block; */
+}
+
 .home__left-item:first-child {
   border-radius: 5rem;
   background: #c2e7ff;
 }
 
 .home__left-item {
+  position: relative;
   display: flex;
   padding: 8px;
   gap: 12px;
+}
+
+.home__left-count{
+  position: absolute;
+  right: .5rem;
 }
 
 .home__left-label--item {
@@ -76,24 +86,108 @@
 }
 
 .home__right {
-  margin-left: 2rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding-top: 1rem;
+  margin: 0 1rem 1rem 2rem;
   width: calc(100% - 240px);
   border-radius: 8px;
   background: #fff;
+  overflow: auto;
+}
+
+.home__right-contact--block {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .home__right-contact--list ul {
   display: flex;
   width: 100%;
   gap: 8px;
+  padding: 1rem 0 0 0;
 }
 
-.home__right-contact--item{
-    width: 18%;
+.home__right-contact--item {
+  width: 18%;
 }
-.home__right-contact--item:first-child{
-    width: calc(28% - 64px);
+.home__right-contact--item:first-child {
+  width: calc(28% - 64px);
 }
+
+.home__right-contact--add{
+  display: none;
+}
+
+.home__right-contact--add-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem 2rem 0 2rem;
+  max-width: 650px;
+}
+
+.home__right-contact--btn-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.home__right-contact--btn {
+  padding: 8px 1rem;
+  border-radius: 5rem;
+  background: #0b57d0;
+  color: #fff;
+  border: none;
+}
+
+.home__right-contact--picture {
+  padding: 2rem 0 0 2rem;
+  width: 162px;
+  height: 162px;
+}
+
+.home__right-contact--picture img {
+  width: 100%;
+}
+
+.home__right-contact--form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+.home__right-contact--form div {
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+}
+
+.home__right-contact--form span {
+  position: absolute;
+}
+
+.home__right-contact--form input {
+  margin-left: 2rem;
+  padding: 5px 10px;
+  width: 400px;
+}
+
+.home__right--label {
+  padding: 0 2rem;
+}
+
+.contact__item {
+  padding: 1rem 2rem 0 2rem;
+}
+
+.home__right-contact--element .home__right-contact--item{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
